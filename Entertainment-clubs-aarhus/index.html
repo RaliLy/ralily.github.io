@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Entertainment Clubs Aarhus</title>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Logo">
+      </a>
+    
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="404page.html">ABOUT</a></li>
+          <li><a href="404page.html">GIFTS</a></li>
+          <li><a href="404page.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    
+      <div class="language-toggle">
+        <a href="404page.html">
+          <button class="toggle-btn" id="langToggle" onclick="toggleLanguage('en')">
+            <span class="bold-text">EN</span> DK
+          </button>
+        </a>
+      </div>
+    
+      <div class="mobile-menu">
+        <div class="hamburger-menu" onclick="toggleMobileMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="#">Danish</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gifts</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+
+<div class="video-cont"></div>
+ <video autoplay muted loop class="home-video" controls width="100%" height="100%">
+  <source src="images/homepagevideo.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
+
+  <div class="headline">
+  <h1>
+    <span class="bold-text">Discover</span> Top <span class="bold-text">Entertainment</span> Clubs in <span class="bold-text">Aarhus</span>
+  </h1>
+  </div>
+
+  <div class="content">
+
+  <div class="clubs">
+    <div class="card-kart">
+      <div class="card-content">
+        <h3 class="card-title-kart">Karting</h3>
+        <a href="karting.html">
+          <p class="card-description-kart">Learn more</p>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="card-bwl">
+      <div class="card-content">
+        <h3 class="card-title-bowling">Bowling</h3>
+        <a href="bowling.html">
+        <p class="card-description-bwl">Learn more</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="card-mg">
+      <div class="card-content">
+        <h3 class="card-title-mini-golf">Mini-golf</h3>
+        <a href="mini-golf.html">
+        <p class="card-description-mg">Learn more</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<section class="gallery">
+<h2>
+  Photo Gallery
+</h2>
+<div clas="photo-gallery">
+  <div class="image-scroll">
+    <img src="images/photo-gal1.jpg" alt="image 1">
+    <img src="images/photo-gal2.jpg" alt="image 2">
+    <img src="images/photo-gal3.jpg" alt="image 3">
+    <img src="images/photo-gal4.jpg" alt="image 4">
+    <img src="images/photo-gal5.jpg" alt="image 5">
+    <img src="images/photo-gal6.JPG" alt="image 6">
+    <img src="images/photo-gal7.jpg" alt="image 7">
+  </div>
+</div>
+
+</section>
+
+<div class="moto">
+<h4 class="centered-text">
+  <span class="bold-text">Entertainment in Aarhus</span> is organisation which
+  aims to help students experience more of Aarhus.
+</h4>
+<br>
+<br>
+<br>
+<br>
+<h2>
+  What do we aim for?
+</h2>
+<h4 class="centered-text">
+  To financially support and encourage students to have fun in Aarhus.
+</h4>
+</div>
+
+<div class="image-container">
+  <img class="side-picl" src="images/side-imgl.jpg" alt="Image left">
+  <div>
+    <h2>
+      Do you want your 20% off?
+    </h2>
+    <h4>
+      Send us your <span class="bold-text">student’s email</span> and we will send you
+    a <span class="bold-text">20% off</span> Voucher!
+    </h4>
+
+    <div class="email-input">
+      <input class="input" type="email" id="userEmail" placeholder="e-mail">
+      <label for="userEmail" class="email-label">Write your e-mail</label>
+    </div>
+    <br>
+    <br>
+
+    <div class="agreements">
+    <label class="checkbox-container">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+      Some agreements people usually agree with <br> before
+      sending their email.
+    </label>
+  </div>
+    <br>
+    <div class="button-container">
+    <button class="pr-button">Send</button>
+    </div>
+
+
+  </div>
+
+  <img class="side-picr" src="images/side-imgr.jpg" alt="Image right">
+</div>
+
+
+<h2 class="gift-headline">SURPRISE A FRIEND</h2>
+<div class="gift">
+<h4 class="centered-text">
+  You want a <span class="bold-text">cool present</span> for your friend? <br> We’ve got you covered!
+  Buy your friend a <span class="bold-text">gift card</span>.
+</h4>
+  
+  
+
+  
+  <div class="gift-cards">
+    <button class="square-button" onclick="showEmailForm(this)">120Kr.</button>
+    <button class="square-button" onclick="showEmailForm(this)">240Kr.</button>
+    <button class="square-button" onclick="showEmailForm(this)">360Kr.</button>
+    <button class="square-button" onclick="showEmailForm(this)">540Kr.</button>
+  </div>
+
+  <div class="email-input hidden-content" style="display: none;">
+    <input class="input" type="email" id="userEmail" placeholder="e-mail">
+    <label for="userEmail" class="email-label">Write your e-mail</label>
+  </div>
+  <br>
+  <br>
+  <div class="hidden">
+  <label class="checkbox-container hidden-content" style="display: none;">
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    Some agreements people usually <br> agree with before sending their email.
+  </label>
+</div>
+  <br>
+  <div class="button-container hidden-content" style="display: none;">
+    <button class="pr-button">Send</button>
+  </div>
+
+</div>
+
+<div class="win">
+  <div class="info-left">
+    <ul class="win-list">
+    <h2 class="some-head">Post a story, win 600kr.!</h2>
+    <h4 class="some-text">Post an instagram story
+      from your favourite entertainment
+      club in Aarhus and you may win a 600kr.
+      voucher for you and your friends.
+      <br><br>
+      
+      <span class="bold-text">Requirements:</span>
+      <li><span class="bold-text">post story</span> on your <span class="bold-text">instagram</span> account</li>
+      <li><span class="bold-text">tag @ent.x.aarhus</span> in a visible manner</li>
+      <li>post the <span class="bold-text">location</span> of the place in a visible manner</li>
+    </h4>
+  </ul>
+  </div>
+  <div class="some-pics">
+    <img class="left-image" src="images/some-left.png" alt="Image 1">
+    <img class="top-image" src="images/some-top.png" alt="Image 2">
+    <img class="right-image" src="images/some-right.png" alt="Image 3">
+  </div>
+</div>
+
+
+
+<footer>
+
+  <div class="footer-content">
+    <div class="footer-headline">
+      <h6>Socials</h6>
+        <img src="images/insta-logo.png" alt="instagam logo">
+        <img src="images/fb-logo.png" alt="facebook logo">
+    </div>
+
+    <div class="footer-headline">
+      <h6>Contact</h6>
+      <p class="footer">+45 7890 2145</p>
+      <p class="footer">ent3L@gmail.com</p>
+    </div>
+    
+    <div class="footer-headline">
+      <h6>Location</h6>
+      <p class="footer">Hack Kampmanns Plads 2 8000 Aarhus C</p>
+    </div>
+
+      <p class="legall">All rights reserved</p>
+  </div>
+
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
